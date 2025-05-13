@@ -8,28 +8,16 @@ This repository contains all the code and models used in our master's thesis pro
 
 # The code is organized into three main .py files:
 1. baseline_vgg19.py
-This notebook implements the baseline model using the VGG19 architecture pretrained on ImageNet. The pipeline includes:
-- Preprocessing of grayscale MRI images (converted to RGB)
-- Data splitting (train/validation/test)
-- Class weighting for imbalanced classes
-- Model training, evaluation, and confusion matrix
-- Basic training/validation visualization
+This notebook implements the baseline model using the VGG19 architecture pretrained on ImageNet.
 
 2. sota_resnet50.py
-This notebook builds a state-of-the-art model using the ResNet50 architecture. It improves upon the baseline by:
-- Applying data augmentation
-- Using salt-and-pepper noise
-- Implementing learning rate scheduling and early stopping
-- Evaluating performance with additional metrics
+This notebook builds a state-of-the-art model using the ResNet50 architecture. 
 
 3. novel_vit.py
 This notebook implements the novel approach using a Vision Transformer (ViT), also pretrained on ImageNet. It includes:
 - ViT setup using PyTorch
-- Salt-and-pepper noise augmentation
-- Preprocessing and class balancing
-- Training and evaluation
 - Integration of XAI (LIME) for model explainability
-
+  
 
 # Dataset
 The dataset consists of MRI images of brains classified into four stages:
@@ -45,8 +33,7 @@ It was obtained from Kaggle: [Alzheimer MRI Dataset](https://www.kaggle.com/data
 # Evaluation Metrics
 Each model is evaluated based on:
 - Accuracy  
-- Sensitivity (Recall)  
-- Specificity  
+- Sensitivity (Recall)
 - F1 Score  
 - Confusion Matrix  
 - Training vs. Validation Loss/Accuracy plots  
