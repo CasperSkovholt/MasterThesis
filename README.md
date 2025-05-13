@@ -7,7 +7,7 @@ This repository contains all the code and models used in our master's thesis pro
 
 
 # The code is organized into three main .py files:
-1. baseline_vgg19.ipynb
+1. baseline_vgg19.py
 This notebook implements the baseline model using the VGG19 architecture pretrained on ImageNet. The pipeline includes:
 - Preprocessing of grayscale MRI images (converted to RGB)
 - Data splitting (train/validation/test)
@@ -15,14 +15,14 @@ This notebook implements the baseline model using the VGG19 architecture pretrai
 - Model training, evaluation, and confusion matrix
 - Basic training/validation visualization
 
-2. sota_resnet50.ipynb
+2. sota_resnet50.py
 This notebook builds a state-of-the-art model using the ResNet50 architecture. It improves upon the baseline by:
 - Applying data augmentation
 - Using salt-and-pepper noise
 - Implementing learning rate scheduling and early stopping
 - Evaluating performance with additional metrics
 
-3. novel_vit.ipynb
+3. novel_vit.py
 This notebook implements the novel approach using a Vision Transformer (ViT), also pretrained on ImageNet. It includes:
 - ViT setup using PyTorch
 - Salt-and-pepper noise augmentation
