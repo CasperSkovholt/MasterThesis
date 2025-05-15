@@ -7,13 +7,13 @@ This repository contains all the code and models used in our master's thesis pro
 
 
 # The code is organized into three main .py files:
-1. baseline_vgg19.py
+1. baseline.py
 This notebook implements the baseline model using the VGG19 architecture pretrained on ImageNet.
 
-2. sota_resnet50.py
+2. sota.py
 This notebook builds a state-of-the-art model using the ResNet50 architecture. 
 
-3. novel_vit.py
+3. novel.py
 This notebook implements the novel approach using a Vision Transformer (ViT), also pretrained on ImageNet. It includes:
 - ViT setup using PyTorch
 - Integration of XAI (LIME) for model explainability
